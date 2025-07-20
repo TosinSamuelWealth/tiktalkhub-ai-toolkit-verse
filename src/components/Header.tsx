@@ -18,13 +18,13 @@ const Header = () => {
 
   const toolCategories = [
     { name: 'SmartBiz Suite', href: '/tools/smartbiz' },
+    { name: 'Career Toolkit', href: '/tools/career' },
+    { name: 'Social Tools', href: '/tools/social' },
+    { name: 'Video Tools', href: '/tools/video' },
+    { name: 'Emotional Utility', href: '/tools/emotional' },
     { name: 'PDF Tools', href: '/tools/pdf' },
-    { name: 'Career Tools', href: '/tools/career' },
-    { name: 'Video Toolkit', href: '/tools/video' },
     { name: 'TikTok Toolkit', href: '/tools/tiktok' },
-    { name: 'Social Toolkit', href: '/tools/social' },
     { name: 'Blog & SEO', href: '/tools/blog' },
-    { name: 'Emotional Tools', href: '/tools/emotional' },
     { name: 'AI Creator', href: '/tools/ai-creator' },
     { name: 'General Tools', href: '/tools/general' }
   ];
@@ -56,46 +56,23 @@ const Header = () => {
             <Link to="/" className="text-foreground hover:text-primary transition-colors duration-300">
               Home
             </Link>
-            
-            {/* Tools Dropdown */}
-            <div 
-              className="relative group"
-              onMouseEnter={() => setActiveDropdown('tools')}
-              onMouseLeave={() => setActiveDropdown(null)}
-            >
-              <button className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors duration-300">
-                <span>Tools</span>
-                <ChevronDown className="h-4 w-4" />
-              </button>
-              
-              {activeDropdown === 'tools' && (
-                <div className="absolute top-full left-0 mt-2 w-64 glass rounded-xl p-4 shadow-elegant animate-fade-in">
-                  <div className="grid grid-cols-1 gap-2">
-                    {toolCategories.map((category) => (
-                      <Link
-                        key={category.name}
-                        to={category.href}
-                        className="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-secondary/20 rounded-lg transition-all duration-300"
-                      >
-                        {category.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <Link to="/tiktok" className="text-foreground hover:text-primary transition-colors duration-300">
-              TikTok Toolkit
+            <Link to="/tools/smartbiz" className="text-foreground hover:text-primary transition-colors duration-300">
+              SmartBiz Suite
             </Link>
-            <Link to="/career" className="text-foreground hover:text-primary transition-colors duration-300">
-              Career Tools
+            <Link to="/tools/career" className="text-foreground hover:text-primary transition-colors duration-300">
+              Career Toolkit
+            </Link>
+            <Link to="/tools/social" className="text-foreground hover:text-primary transition-colors duration-300">
+              Social Tools
+            </Link>
+            <Link to="/tools/video" className="text-foreground hover:text-primary transition-colors duration-300">
+              Video Tools
+            </Link>
+            <Link to="/tools/emotional" className="text-foreground hover:text-primary transition-colors duration-300">
+              Emotional Utility
             </Link>
             <Link to="/blog" className="text-foreground hover:text-primary transition-colors duration-300">
               Blog
-            </Link>
-            <Link to="/contact" className="text-foreground hover:text-primary transition-colors duration-300">
-              Contact
             </Link>
           </div>
 

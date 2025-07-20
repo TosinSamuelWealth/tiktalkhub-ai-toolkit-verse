@@ -37,21 +37,31 @@
 
     --radius: 0.75rem;
 
-    /* Tiktalkhub Custom Colors */
-    --gold: 45 100% 63%;
-    --gold-light: 48 100% 70%;
-    --gold-dark: 42 100% 55%;
+    /* Tiktalkhub Custom Colors - Brighter & More Dynamic */
+    --gold: 48 100% 75%;
+    --gold-light: 50 100% 80%;
+    --gold-dark: 45 100% 65%;
+    --gold-bright: 52 100% 85%;
+    --electric-blue: 200 100% 70%;
+    --neon-purple: 280 100% 75%;
+    --cyber-green: 120 100% 70%;
     --glass: 240 10% 15%;
     --glass-border: 240 5% 25%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(45 100% 63%), hsl(48 100% 70%));
+    /* Dynamic Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(48 100% 75%), hsl(50 100% 80%));
+    --gradient-electric: linear-gradient(135deg, hsl(200 100% 70%), hsl(280 100% 75%));
+    --gradient-cyber: linear-gradient(135deg, hsl(120 100% 70%), hsl(48 100% 75%));
+    --gradient-neon: linear-gradient(135deg, hsl(280 100% 75%), hsl(52 100% 85%));
     --gradient-dark: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 10% 8%));
     --gradient-glass: linear-gradient(135deg, hsl(240 10% 15% / 0.3), hsl(240 5% 25% / 0.1));
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 10% 8%), hsl(45 100% 63% / 0.1));
+    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 10% 8%), hsl(48 100% 75% / 0.1));
 
-    /* Shadows & Effects */
-    --shadow-gold: 0 10px 40px hsl(45 100% 63% / 0.3);
+    /* Enhanced Shadows & Effects */
+    --shadow-gold: 0 10px 40px hsl(48 100% 75% / 0.4);
+    --shadow-electric: 0 10px 40px hsl(200 100% 70% / 0.3);
+    --shadow-cyber: 0 10px 40px hsl(120 100% 70% / 0.3);
+    --shadow-neon: 0 10px 40px hsl(280 100% 75% / 0.3);
     --shadow-glass: 0 8px 32px hsl(240 10% 3.9% / 0.4);
     --shadow-elegant: 0 20px 60px hsl(240 10% 3.9% / 0.6);
 

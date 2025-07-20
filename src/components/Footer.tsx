@@ -70,8 +70,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <a href="mailto:Holuwatosyine@gmail.com" className="hover:underline">
-                  Holuwatosyine@gmail.com
+                 <a href="mailto:support@tiktalkhub.top" className="hover:underline">
+                  support@tiktalkhub.top
                 </a>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
@@ -151,24 +151,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter CTA */}
-        <div className="glass rounded-2xl p-6 mb-8 text-center">
-          <h4 className="text-xl font-semibold text-foreground mb-2">
-            Stay Updated with AI Trends
-          </h4>
-          <p className="text-muted-foreground mb-4">
-            Join thousands of creators getting weekly insights delivered to their inbox.
-          </p>
-          <Link to="#newsletter" className="btn-gold inline-flex items-center">
-            Subscribe to Newsletter
-          </Link>
-        </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-border/20 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © 2024 Tiktalkhub. All rights reserved.
+              © 2025 Tiktalkhub. All rights reserved.
             </div>
             
             <div className="flex items-center space-x-2 text-sm text-muted-foreground">

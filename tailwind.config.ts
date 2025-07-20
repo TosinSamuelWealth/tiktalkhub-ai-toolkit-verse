@@ -65,7 +65,17 @@ export default {
 				gold: {
 					DEFAULT: 'hsl(var(--gold))',
 					light: 'hsl(var(--gold-light))',
-					dark: 'hsl(var(--gold-dark))'
+					dark: 'hsl(var(--gold-dark))',
+					bright: 'hsl(var(--gold-bright))'
+				},
+				electric: {
+					blue: 'hsl(var(--electric-blue))'
+				},
+				neon: {
+					purple: 'hsl(var(--neon-purple))'
+				},
+				cyber: {
+					green: 'hsl(var(--cyber-green))'
 				},
 				glass: {
 					DEFAULT: 'hsl(var(--glass))',

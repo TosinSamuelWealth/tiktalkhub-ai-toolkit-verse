@@ -3,7 +3,8 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
 import FeaturedCategories from '@/components/FeaturedCategories';
 import BlogSection from '@/components/BlogSection';
-import Newsletter from '@/components/Newsletter';
+import SubscribeUpdates from '@/components/SubscribeUpdates';
+import TikoChatbot from '@/components/TikoChatbot';
 import Footer from '@/components/Footer';
 import TikoAI from '@/components/TikoAI';
 
@@ -15,7 +16,8 @@ const Index = () => {
         <HeroSection />
         <FeaturedCategories />
         <BlogSection />
-        <Newsletter />
+        <TikoChatbot />
+        <SubscribeUpdates />
       </main>
       <Footer />
       <TikoAI />
