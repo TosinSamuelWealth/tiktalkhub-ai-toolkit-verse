@@ -273,7 +273,7 @@ const BlogSection = () => {
             to="/blog"
             className="inline-flex items-center space-x-2 text-lg font-semibold text-primary hover:text-gold transition-colors duration-300 group"
           >
-            <span>Read More Stories</span>
+            <span>Read More Insights</span>
             <svg 
               className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
               fill="none" 

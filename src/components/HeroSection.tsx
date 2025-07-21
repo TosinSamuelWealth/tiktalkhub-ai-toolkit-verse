@@ -26,14 +26,34 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background/80">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,215,0,0.1),transparent_50%)]" />
-        <div className="absolute top-0 left-0 w-full h-full">
-          {/* Floating orbs */}
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-primary/20 to-transparent rounded-full blur-3xl animate-float" />
-          <div className="absolute top-3/4 right-1/4 w-96 h-96 bg-gradient-to-l from-gold/10 to-transparent rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-          <div className="absolute top-1/2 left-1/2 w-32 h-32 bg-gradient-to-br from-primary/30 to-gold/20 rounded-full blur-2xl animate-float" style={{ animationDelay: '4s' }} />
+      {/* Magical Animated Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-background/95">
+        {/* Aurora Background */}
+        <div className="absolute inset-0 opacity-30 animate-aurora-shift" 
+             style={{ background: 'var(--gradient-aurora)', filter: 'blur(100px)' }} />
+        
+        {/* Cosmic Gradient Overlay */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(255,215,0,0.3),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(0,191,255,0.2),transparent_40%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(255,20,147,0.15),transparent_60%)]" />
+        
+        {/* Magical Floating Orbs */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl animate-magic-float opacity-40"
+             style={{ background: 'var(--gradient-glow)' }} />
+        <div className="absolute top-3/4 right-1/4 w-64 h-64 rounded-full blur-2xl animate-magic-float opacity-50"
+             style={{ background: 'linear-gradient(45deg, hsl(var(--electric-blue)), hsl(var(--magic-pink)))', animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 w-48 h-48 rounded-full blur-xl animate-cosmic-pulse opacity-60"
+             style={{ background: 'linear-gradient(135deg, hsl(var(--gold-bright)), hsl(var(--aurora-cyan)))', animationDelay: '4s' }} />
+        <div className="absolute top-1/6 right-1/3 w-32 h-32 rounded-full blur-lg animate-magic-float opacity-70"
+             style={{ background: 'radial-gradient(circle, hsl(var(--neon-purple)), transparent)', animationDelay: '6s' }} />
+        
+        {/* Particle Field */}
+        <div className="absolute inset-0">
+          <div className="absolute top-[20%] left-[10%] w-2 h-2 bg-gold-bright rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
+          <div className="absolute top-[60%] left-[20%] w-1 h-1 bg-electric-blue rounded-full animate-pulse" style={{ animationDelay: '3s' }} />
+          <div className="absolute top-[40%] left-[80%] w-1.5 h-1.5 bg-magic-pink rounded-full animate-pulse" style={{ animationDelay: '5s' }} />
+          <div className="absolute top-[80%] left-[70%] w-1 h-1 bg-aurora-cyan rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
+          <div className="absolute top-[30%] left-[60%] w-1 h-1 bg-neon-purple rounded-full animate-pulse" style={{ animationDelay: '4s' }} />
         </div>
       </div>
 
@@ -60,9 +80,9 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                50+ smart tools. Zero signup. Powered by AI. Made for you.
+                50+ smart tools. Zero signup. Just Smart Tools.
                 <br />
-                <span className="text-primary font-semibold">No Signup. No Hassle.</span> Just Smart Tools.
+                <span className="text-primary font-semibold">No Signup. No Hassle.</span> Pure Intelligence.
               </p>
             </div>
 

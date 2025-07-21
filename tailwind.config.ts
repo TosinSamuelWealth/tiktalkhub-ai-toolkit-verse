@@ -62,21 +62,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				gold: {
-					DEFAULT: 'hsl(var(--gold))',
-					light: 'hsl(var(--gold-light))',
-					dark: 'hsl(var(--gold-dark))',
-					bright: 'hsl(var(--gold-bright))'
-				},
-				electric: {
-					blue: 'hsl(var(--electric-blue))'
-				},
-				neon: {
-					purple: 'hsl(var(--neon-purple))'
-				},
-				cyber: {
-					green: 'hsl(var(--cyber-green))'
-				},
+				"gold": "hsl(var(--gold))",
+				"gold-light": "hsl(var(--gold-light))",
+				"gold-bright": "hsl(var(--gold-bright))",
+				"electric-blue": "hsl(var(--electric-blue))",
+				"neon-purple": "hsl(var(--neon-purple))",
+				"cyber-green": "hsl(var(--cyber-green))",
+				"magic-pink": "hsl(var(--magic-pink))",
+				"aurora-cyan": "hsl(var(--aurora-cyan))",
 				glass: {
 					DEFAULT: 'hsl(var(--glass))',
 					border: 'hsl(var(--glass-border))'

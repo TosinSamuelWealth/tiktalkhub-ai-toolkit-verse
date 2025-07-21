@@ -37,25 +37,26 @@
 
     --radius: 0.75rem;
 
-    /* Tiktalkhub Custom Colors - Brighter & More Dynamic */
-    --gold: 48 100% 75%;
-    --gold-light: 50 100% 80%;
-    --gold-dark: 45 100% 65%;
-    --gold-bright: 52 100% 85%;
-    --electric-blue: 200 100% 70%;
-    --neon-purple: 280 100% 75%;
-    --cyber-green: 120 100% 70%;
+    /* Magical Vibrant Palette */
+    --gold: 45 100% 60%;
+    --gold-light: 50 100% 70%; 
+    --gold-bright: 45 100% 50%;
+    --electric-blue: 200 100% 50%;
+    --neon-purple: 280 100% 70%;
+    --cyber-green: 120 100% 50%;
+    --magic-pink: 320 100% 70%;
+    --aurora-cyan: 180 100% 50%;
     --glass: 240 10% 15%;
     --glass-border: 240 5% 25%;
 
-    /* Dynamic Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(48 100% 75%), hsl(50 100% 80%));
-    --gradient-electric: linear-gradient(135deg, hsl(200 100% 70%), hsl(280 100% 75%));
-    --gradient-cyber: linear-gradient(135deg, hsl(120 100% 70%), hsl(48 100% 75%));
-    --gradient-neon: linear-gradient(135deg, hsl(280 100% 75%), hsl(52 100% 85%));
+    /* Magical Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--gold)), hsl(var(--electric-blue)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--magic-pink)), hsl(var(--electric-blue)), hsl(var(--gold-bright)));
+    --gradient-cosmic: radial-gradient(circle at 50% 50%, hsl(var(--gold) / 0.4), hsl(var(--electric-blue) / 0.3), hsl(var(--magic-pink) / 0.2));
+    --gradient-aurora: linear-gradient(45deg, hsl(var(--aurora-cyan)), hsl(var(--neon-purple)), hsl(var(--gold-bright)), hsl(var(--magic-pink)));
+    --gradient-glow: radial-gradient(circle, hsl(var(--gold-bright) / 0.8), hsl(var(--electric-blue) / 0.6), transparent);
     --gradient-dark: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 10% 8%));
     --gradient-glass: linear-gradient(135deg, hsl(240 10% 15% / 0.3), hsl(240 5% 25% / 0.1));
-    --gradient-hero: linear-gradient(135deg, hsl(240 10% 3.9%), hsl(240 10% 8%), hsl(48 100% 75% / 0.1));
 
     /* Enhanced Shadows & Effects */
     --shadow-gold: 0 10px 40px hsl(48 100% 75% / 0.4);
@@ -230,5 +231,54 @@
   @keyframes shimmer {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
+  }
+
+  /* Magical Animations */
+  .animate-magic-float {
+    animation: magic-float 8s ease-in-out infinite;
+  }
+
+  .animate-aurora-shift {
+    animation: aurora-shift 4s ease-in-out infinite;
+  }
+
+  .animate-cosmic-pulse {
+    animation: cosmic-pulse 3s ease-in-out infinite;
+  }
+
+  @keyframes magic-float {
+    0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
+    33% { transform: translateY(-20px) rotate(5deg) scale(1.05); }
+    66% { transform: translateY(10px) rotate(-3deg) scale(0.95); }
+  }
+
+  @keyframes aurora-shift {
+    0%, 100% { 
+      background: linear-gradient(45deg, hsl(var(--aurora-cyan)), hsl(var(--neon-purple)));
+      transform: rotate(0deg);
+    }
+    25% { 
+      background: linear-gradient(45deg, hsl(var(--gold-bright)), hsl(var(--magic-pink)));
+      transform: rotate(90deg);
+    }
+    50% { 
+      background: linear-gradient(45deg, hsl(var(--electric-blue)), hsl(var(--gold)));
+      transform: rotate(180deg);
+    }
+    75% { 
+      background: linear-gradient(45deg, hsl(var(--neon-purple)), hsl(var(--aurora-cyan)));
+      transform: rotate(270deg);
+    }
+  }
+
+  @keyframes cosmic-pulse {
+    0%, 100% { 
+      box-shadow: 0 0 40px hsl(var(--gold-bright) / 0.4), 0 0 80px hsl(var(--electric-blue) / 0.3);
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 60px hsl(var(--magic-pink) / 0.6), 0 0 120px hsl(var(--aurora-cyan) / 0.4);
+      transform: scale(1.05);
+    }
   }
 }

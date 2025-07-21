@@ -19,14 +19,12 @@ const Footer = () => {
     { name: 'Tutorials', href: '/tutorials' },
     { name: 'Templates', href: '/templates' },
     { name: 'Case Studies', href: '/case-studies' },
-    { name: 'Help Center', href: '/help' },
-    { name: 'API Documentation', href: '/api-docs' }
+    { name: 'Help Center', href: '/help' }
   ];
 
   const company = [
     { name: 'About Us', href: '/about' },
     { name: 'Careers', href: '/careers' },
-    { name: 'Press Kit', href: '/press' },
     { name: 'Privacy Policy', href: '/privacy' },
     { name: 'Terms of Service', href: '/terms' },
     { name: 'Contact', href: '/contact' }

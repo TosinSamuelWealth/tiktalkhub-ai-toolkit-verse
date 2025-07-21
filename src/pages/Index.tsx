@@ -16,7 +16,6 @@ const Index = () => {
         <HeroSection />
         <FeaturedCategories />
         <BlogSection />
-        <TikoChatbot />
         <SubscribeUpdates />
       </main>
       <Footer />
