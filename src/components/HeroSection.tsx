@@ -68,21 +68,21 @@ const HeroSection = () => {
               </div>
               
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-foreground via-primary to-gold-bright bg-clip-text text-transparent">
-                  All-in-One AI Toolkit
+                <span className="bg-gradient-to-r from-white via-magic-pink to-aurora-cyan bg-clip-text text-transparent animate-pulse">
+                  All-in-One Productivity Toolkit
                 </span>
                 <br />
-                <span className="text-foreground">for</span>
+                <span className="text-white">for</span>
                 <br />
-                <span className="bg-gradient-to-r from-electric-blue via-primary to-gold-bright bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-aurora-cyan via-white to-gold-bright bg-clip-text text-transparent animate-pulse">
                   Creators, Students, Professionals & More
                 </span>
               </h1>
               
-              <p className="text-xl text-muted-foreground max-w-2xl leading-relaxed">
-                50+ smart tools. Zero signup. Just Smart Tools.
+              <p className="text-xl text-white max-w-2xl leading-relaxed">
+                Supercharge free tools for Everyone
                 <br />
-                <span className="text-primary font-semibold">No Signup. No Hassle.</span> Pure Intelligence.
+                <span className="text-gold-bright font-semibold">No Signup. No Hassle.</span> Pure Intelligence.
               </p>
             </div>
 

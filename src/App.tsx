@@ -12,10 +12,15 @@ import Terms from "./pages/Terms";
 import Cookies from "./pages/Cookies";
 import Tutorials from "./pages/Tutorials";
 import Templates from "./pages/Templates";
+import CaseStudies from "./pages/CaseStudies";
+import HelpCenter from "./pages/HelpCenter";
 import SmartBiz from "./pages/tools/SmartBiz";
 import Career from "./pages/tools/Career";
 import VideoTools from "./pages/tools/Video";
 import SocialTools from "./pages/tools/Social";
+import General from "./pages/tools/General";
+import TextTools from "./pages/tools/TextTools";
+import TikTokTools from "./pages/tools/TikTok";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,10 +41,15 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/tutorials" element={<Tutorials />} />
           <Route path="/templates" element={<Templates />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/help" element={<HelpCenter />} />
           <Route path="/tools/smartbiz" element={<SmartBiz />} />
           <Route path="/tools/career" element={<Career />} />
           <Route path="/tools/video" element={<VideoTools />} />
           <Route path="/tools/social" element={<SocialTools />} />
+          <Route path="/tools/general" element={<General />} />
+          <Route path="/tools/text" element={<TextTools />} />
+          <Route path="/tools/tiktok" element={<TikTokTools />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
