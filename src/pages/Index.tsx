@@ -4,7 +4,6 @@ import HeroSection from '@/components/HeroSection';
 import FeaturedCategories from '@/components/FeaturedCategories';
 import BlogSection from '@/components/BlogSection';
 import SubscribeUpdates from '@/components/SubscribeUpdates';
-import TikoChatbot from '@/components/TikoChatbot';
 import Footer from '@/components/Footer';
 import TikoAI from '@/components/TikoAI';
 

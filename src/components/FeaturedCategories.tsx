@@ -183,7 +183,7 @@ const FeaturedCategories = () => {
         {/* View All CTA */}
         <div className="text-center mt-12">
           <Link
-            to="/tools"
+            to="/tools/general"
             className="inline-flex items-center space-x-2 text-lg font-semibold text-primary hover:text-gold transition-colors duration-300 group"
           >
             <span>Explore All 50+ Tools</span>
