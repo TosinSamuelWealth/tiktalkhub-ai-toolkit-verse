@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Sparkles, Zap, Rocket } from 'lucide-react';
 
@@ -8,19 +9,22 @@ const HeroSection = () => {
       icon: <Sparkles className="h-8 w-8" />,
       title: "AI Blog Generator",
       description: "Create viral content in seconds",
-      color: "from-purple-400 to-pink-400"
+      color: "from-purple-400 to-pink-400",
+      link: "/tools/blog"
     },
     {
       icon: <Zap className="h-8 w-8" />,
       title: "Resume AI Builder",
       description: "Land your dream job faster",
-      color: "from-blue-400 to-cyan-400"
+      color: "from-blue-400 to-cyan-400",
+      link: "/tools/career"
     },
     {
       icon: <Rocket className="h-8 w-8" />,
       title: "TikTok Trend Tracker",
       description: "Go viral with trending content",
-      color: "from-green-400 to-emerald-400"
+      color: "from-green-400 to-emerald-400",
+      link: "/tools/tiktok"
     }
   ];
 
@@ -87,17 +91,21 @@ const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="btn-gold text-lg px-8 py-4 group">
-                Start Creating
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-lg px-8 py-4 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
-              >
-                Explore Tools
-              </Button>
+              <Link to="/tools/general">
+                <Button size="lg" className="btn-gold text-lg px-8 py-4 group w-full sm:w-auto">
+                  Start Creating
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </Button>
+              </Link>
+              <Link to="/tools/general">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="text-lg px-8 py-4 border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300 w-full sm:w-auto"
+                >
+                  Explore Tools
+                </Button>
+              </Link>
             </div>
 
             <div className="flex items-center space-x-8 text-sm text-muted-foreground">
@@ -125,38 +133,45 @@ const HeroSection = () => {
             
             <div className="space-y-4">
               {topTools.map((tool, index) => (
-                <div 
+                <Link 
                   key={tool.title}
-                  className="tiktok-card p-6 group cursor-pointer"
-                  style={{ animationDelay: `${index * 0.2}s` }}
+                  to={tool.link}
+                  className="block"
                 >
-                  <div className="flex items-center space-x-4">
-                    <div className={`p-3 rounded-xl bg-gradient-to-r ${tool.color} text-white group-hover:scale-110 transition-transform duration-300`}>
-                      {tool.icon}
+                  <div 
+                    className="tiktok-card p-6 group cursor-pointer"
+                    style={{ animationDelay: `${index * 0.2}s` }}
+                  >
+                    <div className="flex items-center space-x-4">
+                      <div className={`p-3 rounded-xl bg-gradient-to-r ${tool.color} text-white group-hover:scale-110 transition-transform duration-300`}>
+                        {tool.icon}
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
+                          {tool.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground">
+                          {tool.description}
+                        </p>
+                      </div>
+                      <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
                     </div>
-                    <div className="flex-1">
-                      <h4 className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
-                        {tool.title}
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        {tool.description}
-                      </p>
+                    
+                    {/* Shimmer effect on hover */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden rounded-2xl">
+                      <div className="absolute inset-0 shimmer" />
                     </div>
-                    <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition-all duration-300" />
                   </div>
-                  
-                  {/* Shimmer effect on hover */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 overflow-hidden rounded-2xl">
-                    <div className="absolute inset-0 shimmer" />
-                  </div>
-                </div>
+                </Link>
               ))}
             </div>
 
             <div className="text-center pt-4">
-              <Button variant="ghost" className="text-primary hover:text-gold hover:bg-primary/10">
-                View All 50+ Tools →
-              </Button>
+              <Link to="/tools/general">
+                <Button variant="ghost" className="text-primary hover:text-gold hover:bg-primary/10">
+                  View All 50+ Tools →
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
